@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>3.2</version>
-    <date>2017-05-08T15:24:05Z</date>
+    <version>4.4</version>
+    <date>2020-06-08T09:27:42Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -11,7 +11,6 @@
         <template>
             <template>Template TCP Stats</template>
             <name>Template TCP Stats</name>
-            <description/>
             <groups>
                 <group>
                     <name>Templates</name>
@@ -25,869 +24,320 @@
             <items>
                 <item>
                     <name>TCP::conn::active connections openings</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>tcp.conn.active.opens</key>
                     <delay>0</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>1</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
+                    <history>28d</history>
+                    <value_type>FLOAT</value_type>
+                    <units>ps</units>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <preprocessing>
+                        <step>
+                            <type>CHANGE_PER_SECOND</type>
+                            <params/>
+                        </step>
+                    </preprocessing>
                 </item>
                 <item>
                     <name>TCP::conn::connections established</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>tcp.conn.estab</key>
                     <delay>0</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
+                    <history>28d</history>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
                 </item>
                 <item>
                     <name>TCP::conn::failed connection attempts</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>tcp.conn.failed.attempts</key>
                     <delay>0</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>1</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
+                    <history>28d</history>
+                    <value_type>FLOAT</value_type>
+                    <units>ps</units>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <preprocessing>
+                        <step>
+                            <type>CHANGE_PER_SECOND</type>
+                            <params/>
+                        </step>
+                    </preprocessing>
                 </item>
                 <item>
                     <name>TCP::conn::passive connections openings</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>tcp.conn.passive.opens</key>
                     <delay>0</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>1</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
+                    <history>28d</history>
+                    <value_type>FLOAT</value_type>
+                    <units>ps</units>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <preprocessing>
+                        <step>
+                            <type>CHANGE_PER_SECOND</type>
+                            <params/>
+                        </step>
+                    </preprocessing>
                 </item>
                 <item>
                     <name>TCP::conn::connection resets received</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>tcp.conn.resets.recv</key>
                     <delay>0</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>1</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
+                    <history>28d</history>
+                    <value_type>FLOAT</value_type>
+                    <units>ps</units>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <preprocessing>
+                        <step>
+                            <type>CHANGE_PER_SECOND</type>
+                            <params/>
+                        </step>
+                    </preprocessing>
                 </item>
                 <item>
                     <name>TCP::conn::resets sent</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>tcp.conn.resets.sent</key>
                     <delay>0</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>1</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
+                    <history>28d</history>
+                    <value_type>FLOAT</value_type>
+                    <units>ps</units>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <preprocessing>
+                        <step>
+                            <type>CHANGE_PER_SECOND</type>
+                            <params/>
+                        </step>
+                    </preprocessing>
                 </item>
                 <item>
                     <name>TCP::conn::bad segments received</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>tcp.seg.bad</key>
                     <delay>0</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>1</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
+                    <history>28d</history>
+                    <value_type>FLOAT</value_type>
+                    <units>ps</units>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <preprocessing>
+                        <step>
+                            <type>CHANGE_PER_SECOND</type>
+                            <params/>
+                        </step>
+                    </preprocessing>
                 </item>
                 <item>
                     <name>TCP::conn::segments received</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>tcp.seg.recv</key>
                     <delay>0</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>1</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
+                    <history>28d</history>
+                    <value_type>FLOAT</value_type>
+                    <units>ps</units>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <preprocessing>
+                        <step>
+                            <type>CHANGE_PER_SECOND</type>
+                            <params/>
+                        </step>
+                    </preprocessing>
                 </item>
                 <item>
                     <name>TCP::conn::segments retransmited</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>tcp.seg.retrans</key>
                     <delay>0</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>1</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
+                    <history>28d</history>
+                    <value_type>FLOAT</value_type>
+                    <units>ps</units>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <preprocessing>
+                        <step>
+                            <type>CHANGE_PER_SECOND</type>
+                            <params/>
+                        </step>
+                    </preprocessing>
                 </item>
                 <item>
                     <name>TCP::conn::segments send out</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>tcp.seg.send</key>
                     <delay>0</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>1</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
+                    <history>28d</history>
+                    <value_type>FLOAT</value_type>
+                    <units>ps</units>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
+                    <preprocessing>
+                        <step>
+                            <type>CHANGE_PER_SECOND</type>
+                            <params/>
+                        </step>
+                    </preprocessing>
                 </item>
                 <item>
                     <name>TCP::socket::close-wait</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>tcp.socket.close-wait</key>
                     <delay>0</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
+                    <history>28d</history>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
                 </item>
                 <item>
                     <name>TCP::socket::estab</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>tcp.socket.estab</key>
                     <delay>0</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
+                    <history>28d</history>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
                 </item>
                 <item>
                     <name>TCP::socket::fin-wait-1</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>tcp.socket.fin-wait-1</key>
                     <delay>0</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
+                    <history>28d</history>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
                 </item>
                 <item>
                     <name>TCP::socket::fin-wait-2</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>tcp.socket.fin-wait-2</key>
                     <delay>0</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
+                    <history>28d</history>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
                 </item>
                 <item>
                     <name>TCP::socket::last-ack</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>tcp.socket.last-ack</key>
                     <delay>0</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
+                    <history>28d</history>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
                 </item>
                 <item>
                     <name>TCP::socket::listen</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>tcp.socket.listen</key>
                     <delay>0</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
+                    <history>28d</history>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
                 </item>
                 <item>
                     <name>TCP::socket::syn-recv</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>1</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>tcp.socket.syn-recv</key>
                     <delay>0</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
+                    <history>28d</history>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
                 </item>
                 <item>
                     <name>TCP::socket::syn-sent</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>tcp.socket.syn-sent</key>
                     <delay>0</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
+                    <history>28d</history>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
                 </item>
                 <item>
                     <name>TCP::socket::time-wait</name>
-                    <type>2</type>
-                    <snmp_community/>
-                    <multiplier>1</multiplier>
-                    <snmp_oid/>
+                    <type>TRAP</type>
                     <key>tcp.socket.time-wait</key>
                     <delay>0</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
+                    <history>28d</history>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
                 </item>
                 <item>
                     <name>TCP::zabbix sender</name>
-                    <type>7</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
+                    <type>ZABBIX_ACTIVE</type>
                     <key>tcp.zabbix.sender</key>
                     <delay>60</delay>
-                    <history>28</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
+                    <history>3d</history>
+                    <trends>0</trends>
+                    <value_type>CHAR</value_type>
                     <description>A script used for sending TCP stats</description>
-                    <inventory_link>0</inventory_link>
                     <applications>
                         <application>
                             <name>TCP</name>
                         </application>
                     </applications>
-                    <valuemap/>
-                    <logtimefmt/>
                 </item>
             </items>
-            <discovery_rules/>
-            <httptests/>
-            <macros/>
-            <templates/>
             <screens>
                 <screen>
                     <name>Network TCP</name>
@@ -896,6 +346,11 @@
                     <screen_items>
                         <screen_item>
                             <resourcetype>0</resourcetype>
+                            <style>0</style>
+                            <resource>
+                                <name>Network TCP connections</name>
+                                <host>Template TCP Stats</host>
+                            </resource>
                             <width>500</width>
                             <height>100</height>
                             <x>0</x>
@@ -905,19 +360,19 @@
                             <elements>0</elements>
                             <valign>0</valign>
                             <halign>0</halign>
-                            <style>0</style>
-                            <url/>
                             <dynamic>0</dynamic>
                             <sort_triggers>0</sort_triggers>
-                            <resource>
-                                <name>Network TCP connections</name>
-                                <host>Template TCP Stats</host>
-                            </resource>
-                            <max_columns>3</max_columns>
+                            <url/>
                             <application/>
+                            <max_columns>3</max_columns>
                         </screen_item>
                         <screen_item>
                             <resourcetype>0</resourcetype>
+                            <style>0</style>
+                            <resource>
+                                <name>Network TCP segments</name>
+                                <host>Template TCP Stats</host>
+                            </resource>
                             <width>500</width>
                             <height>100</height>
                             <x>0</x>
@@ -927,19 +382,19 @@
                             <elements>0</elements>
                             <valign>0</valign>
                             <halign>0</halign>
-                            <style>0</style>
-                            <url/>
                             <dynamic>0</dynamic>
                             <sort_triggers>0</sort_triggers>
-                            <resource>
-                                <name>Network TCP segments</name>
-                                <host>Template TCP Stats</host>
-                            </resource>
-                            <max_columns>3</max_columns>
+                            <url/>
                             <application/>
+                            <max_columns>3</max_columns>
                         </screen_item>
                         <screen_item>
                             <resourcetype>0</resourcetype>
+                            <style>0</style>
+                            <resource>
+                                <name>Network TCP Socket States</name>
+                                <host>Template TCP Stats</host>
+                            </resource>
                             <width>500</width>
                             <height>100</height>
                             <x>0</x>
@@ -949,16 +404,11 @@
                             <elements>0</elements>
                             <valign>0</valign>
                             <halign>0</halign>
-                            <style>0</style>
-                            <url/>
                             <dynamic>0</dynamic>
                             <sort_triggers>0</sort_triggers>
-                            <resource>
-                                <name>Network TCP Socket States</name>
-                                <host>Template TCP Stats</host>
-                            </resource>
-                            <max_columns>3</max_columns>
+                            <url/>
                             <application/>
+                            <max_columns>3</max_columns>
                         </screen_item>
                     </screen_items>
                 </screen>
@@ -968,29 +418,11 @@
     <graphs>
         <graph>
             <name>Network TCP connections</name>
-            <width>900</width>
-            <height>200</height>
-            <yaxismin>0.0000</yaxismin>
-            <yaxismax>100.0000</yaxismax>
-            <show_work_period>1</show_work_period>
-            <show_triggers>1</show_triggers>
-            <type>1</type>
-            <show_legend>1</show_legend>
-            <show_3d>0</show_3d>
-            <percent_left>0.0000</percent_left>
-            <percent_right>0.0000</percent_right>
-            <ymin_type_1>0</ymin_type_1>
-            <ymax_type_1>0</ymax_type_1>
-            <ymin_item_1>0</ymin_item_1>
-            <ymax_item_1>0</ymax_item_1>
+            <type>STACKED</type>
             <graph_items>
                 <graph_item>
-                    <sortorder>0</sortorder>
-                    <drawtype>4</drawtype>
+                    <drawtype>DASHED_LINE</drawtype>
                     <color>99FF99</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
                     <item>
                         <host>Template TCP Stats</host>
                         <key>tcp.conn.estab</key>
@@ -998,11 +430,8 @@
                 </graph_item>
                 <graph_item>
                     <sortorder>1</sortorder>
-                    <drawtype>5</drawtype>
+                    <drawtype>GRADIENT_LINE</drawtype>
                     <color>1A7C11</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
                     <item>
                         <host>Template TCP Stats</host>
                         <key>tcp.conn.active.opens</key>
@@ -1010,11 +439,8 @@
                 </graph_item>
                 <graph_item>
                     <sortorder>2</sortorder>
-                    <drawtype>5</drawtype>
+                    <drawtype>GRADIENT_LINE</drawtype>
                     <color>F63100</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
                     <item>
                         <host>Template TCP Stats</host>
                         <key>tcp.conn.resets.recv</key>
@@ -1022,11 +448,8 @@
                 </graph_item>
                 <graph_item>
                     <sortorder>3</sortorder>
-                    <drawtype>5</drawtype>
+                    <drawtype>GRADIENT_LINE</drawtype>
                     <color>2774A4</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
                     <item>
                         <host>Template TCP Stats</host>
                         <key>tcp.conn.failed.attempts</key>
@@ -1034,11 +457,8 @@
                 </graph_item>
                 <graph_item>
                     <sortorder>4</sortorder>
-                    <drawtype>5</drawtype>
+                    <drawtype>GRADIENT_LINE</drawtype>
                     <color>A54F10</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
                     <item>
                         <host>Template TCP Stats</host>
                         <key>tcp.conn.passive.opens</key>
@@ -1046,11 +466,8 @@
                 </graph_item>
                 <graph_item>
                     <sortorder>5</sortorder>
-                    <drawtype>5</drawtype>
+                    <drawtype>GRADIENT_LINE</drawtype>
                     <color>FC6EA3</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
                     <item>
                         <host>Template TCP Stats</host>
                         <key>tcp.conn.resets.sent</key>
@@ -1060,29 +477,11 @@
         </graph>
         <graph>
             <name>Network TCP segments</name>
-            <width>900</width>
-            <height>200</height>
-            <yaxismin>0.0000</yaxismin>
-            <yaxismax>100.0000</yaxismax>
-            <show_work_period>1</show_work_period>
-            <show_triggers>1</show_triggers>
-            <type>0</type>
-            <show_legend>1</show_legend>
-            <show_3d>0</show_3d>
-            <percent_left>0.0000</percent_left>
-            <percent_right>0.0000</percent_right>
-            <ymin_type_1>0</ymin_type_1>
-            <ymax_type_1>0</ymax_type_1>
-            <ymin_item_1>0</ymin_item_1>
-            <ymax_item_1>0</ymax_item_1>
             <graph_items>
                 <graph_item>
-                    <sortorder>0</sortorder>
-                    <drawtype>5</drawtype>
+                    <drawtype>GRADIENT_LINE</drawtype>
                     <color>DDDD00</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>7</calc_fnc>
-                    <type>0</type>
+                    <calc_fnc>ALL</calc_fnc>
                     <item>
                         <host>Template TCP Stats</host>
                         <key>tcp.seg.send</key>
@@ -1090,11 +489,9 @@
                 </graph_item>
                 <graph_item>
                     <sortorder>1</sortorder>
-                    <drawtype>5</drawtype>
+                    <drawtype>GRADIENT_LINE</drawtype>
                     <color>00DD00</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>7</calc_fnc>
-                    <type>0</type>
+                    <calc_fnc>ALL</calc_fnc>
                     <item>
                         <host>Template TCP Stats</host>
                         <key>tcp.seg.recv</key>
@@ -1102,11 +499,9 @@
                 </graph_item>
                 <graph_item>
                     <sortorder>2</sortorder>
-                    <drawtype>5</drawtype>
+                    <drawtype>GRADIENT_LINE</drawtype>
                     <color>DD0000</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>7</calc_fnc>
-                    <type>0</type>
+                    <calc_fnc>ALL</calc_fnc>
                     <item>
                         <host>Template TCP Stats</host>
                         <key>tcp.seg.retrans</key>
@@ -1114,11 +509,9 @@
                 </graph_item>
                 <graph_item>
                     <sortorder>3</sortorder>
-                    <drawtype>5</drawtype>
+                    <drawtype>GRADIENT_LINE</drawtype>
                     <color>0000DD</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>7</calc_fnc>
-                    <type>0</type>
+                    <calc_fnc>ALL</calc_fnc>
                     <item>
                         <host>Template TCP Stats</host>
                         <key>tcp.seg.bad</key>
@@ -1128,29 +521,10 @@
         </graph>
         <graph>
             <name>Network TCP Socket States</name>
-            <width>900</width>
-            <height>200</height>
-            <yaxismin>0.0000</yaxismin>
-            <yaxismax>100.0000</yaxismax>
-            <show_work_period>1</show_work_period>
-            <show_triggers>1</show_triggers>
-            <type>1</type>
-            <show_legend>1</show_legend>
-            <show_3d>0</show_3d>
-            <percent_left>0.0000</percent_left>
-            <percent_right>0.0000</percent_right>
-            <ymin_type_1>0</ymin_type_1>
-            <ymax_type_1>0</ymax_type_1>
-            <ymin_item_1>0</ymin_item_1>
-            <ymax_item_1>0</ymax_item_1>
+            <type>STACKED</type>
             <graph_items>
                 <graph_item>
-                    <sortorder>0</sortorder>
-                    <drawtype>0</drawtype>
                     <color>C8C800</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
                     <item>
                         <host>Template TCP Stats</host>
                         <key>tcp.socket.listen</key>
@@ -1158,11 +532,7 @@
                 </graph_item>
                 <graph_item>
                     <sortorder>1</sortorder>
-                    <drawtype>0</drawtype>
                     <color>00BB00</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
                     <item>
                         <host>Template TCP Stats</host>
                         <key>tcp.socket.syn-sent</key>
@@ -1170,11 +540,7 @@
                 </graph_item>
                 <graph_item>
                     <sortorder>2</sortorder>
-                    <drawtype>0</drawtype>
                     <color>000000</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
                     <item>
                         <host>Template TCP Stats</host>
                         <key>tcp.socket.syn-recv</key>
@@ -1182,11 +548,7 @@
                 </graph_item>
                 <graph_item>
                     <sortorder>3</sortorder>
-                    <drawtype>0</drawtype>
                     <color>99FF99</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
                     <item>
                         <host>Template TCP Stats</host>
                         <key>tcp.socket.estab</key>
@@ -1194,11 +556,7 @@
                 </graph_item>
                 <graph_item>
                     <sortorder>4</sortorder>
-                    <drawtype>0</drawtype>
                     <color>0000C8</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
                     <item>
                         <host>Template TCP Stats</host>
                         <key>tcp.socket.fin-wait-1</key>
@@ -1206,11 +564,7 @@
                 </graph_item>
                 <graph_item>
                     <sortorder>5</sortorder>
-                    <drawtype>0</drawtype>
                     <color>CCCCFF</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
                     <item>
                         <host>Template TCP Stats</host>
                         <key>tcp.socket.fin-wait-2</key>
@@ -1218,11 +572,7 @@
                 </graph_item>
                 <graph_item>
                     <sortorder>6</sortorder>
-                    <drawtype>0</drawtype>
                     <color>00C8C8</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
                     <item>
                         <host>Template TCP Stats</host>
                         <key>tcp.socket.last-ack</key>
@@ -1230,11 +580,7 @@
                 </graph_item>
                 <graph_item>
                     <sortorder>7</sortorder>
-                    <drawtype>0</drawtype>
                     <color>C80000</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
                     <item>
                         <host>Template TCP Stats</host>
                         <key>tcp.socket.close-wait</key>
@@ -1242,11 +588,7 @@
                 </graph_item>
                 <graph_item>
                     <sortorder>8</sortorder>
-                    <drawtype>0</drawtype>
                     <color>888888</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
                     <item>
                         <host>Template TCP Stats</host>
                         <key>tcp.socket.time-wait</key>
